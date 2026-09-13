@@ -5,34 +5,72 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Clean Slate Solutions — Case Study</title>
   <link rel="stylesheet" href="../style.css">
- </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+</head>
 <body>
   <header>
     <div class="header-inner">
-      <div class="brand"><h1>LungeloMK</h1><p class="tagline">Case study</p></div>
-      <nav><a href="../index.html">Home</a><a href="../projects.html">Projects</a><a href="../profile.html">Profile</a></nav>
+      <div class="brand"><h1><a href="../index.html">KM</a></h1></div>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="../projects.html" aria-current="page">Work</a>
+        <a href="../profile.html">About</a>
+        <a href="../resume.html">Resume</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
     </div>
   </header>
   <main>
-    <section class="card">
-      <h2>Clean Slate Solutions — Case Study</h2>
-      <p>Project: Clean Slate Solutions — <a href="https://cleanslatesolutions.co.za/">Live site</a></p>
-      <h3>Summary</h3>
-      <p>A professional website for Clean Slate Solutions focused on presenting services, client success stories, and contact.</p>
-      <h3>Role</h3>
-      <ul>
-        <li>Lead developer and UI/UX designer.</li>
-        <li>Implemented responsive layout and accessible navigation.</li>
-      </ul>
-      <h3>Tech &amp; Architecture</h3>
-      <ul>
-        <li>HTML5, CSS3, vanilla JavaScript</li>
-        <li>Responsive grid and mobile-first breakpoints</li>
-      </ul>
-      <h3>Screenshots</h3>
-      <img src="../assets/proj-cleanslate.png" alt="Clean Slate screenshot" style="max-width:100%;border-radius:8px;border:1px solid #e6eefb">
+    <section class="page-hero" data-reveal>
+      <div class="hero-top">
+        <span class="idx">02 — Case study</span>
+        <span>Cleaning · Polokwane</span>
+      </div>
+      <h2 class="display">Clean <span>Slate.</span></h2>
+      <p class="lede">A trust-first site for a local cleaning company — services, proof, and a booking path that works on a phone.</p>
+      <div class="hero-actions">
+        <a class="button" href="https://cleanslatesolutions.co.za/" target="_blank" rel="noopener">Open live site</a>
+        <a class="button button-ghost" href="../projects.html">All work</a>
+      </div>
     </section>
+    <a class="cs-visual theme-clean" href="https://cleanslatesolutions.co.za/" target="_blank" rel="noopener">
+      <em>Live · cleanslatesolutions.co.za</em>
+      <strong>Clean Slate Solutions</strong>
+    </a>
+    <div class="cs-grid">
+      <div data-reveal>
+        <h3>Summary</h3>
+        <p>Present services, client stories, and contact without looking like a template. The site is built to convert a neighbour into a booked clean.</p>
+      </div>
+      <div data-reveal>
+        <h3>Role</h3>
+        <ul>
+          <li>Lead developer and UI/UX designer</li>
+          <li>Responsive layout and accessible navigation</li>
+        </ul>
+      </div>
+      <div data-reveal>
+        <h3>Tech</h3>
+        <ul>
+          <li>HTML5, CSS3, vanilla JavaScript</li>
+          <li>Mobile-first grid and breakpoints</li>
+        </ul>
+      </div>
+      <div data-reveal>
+        <h3>Outcome</h3>
+        <p>A live .co.za presence clients can tap from WhatsApp and share without explanation.</p>
+      </div>
+    </div>
+    <img class="cs-shot" src="../assets/proj-cleanslate.png" alt="Clean Slate Solutions website screenshot">
   </main>
-  <footer><p>&copy; 2025 LungeloMK</p></footer>
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <p class="footer-giant"><a href="../contact.html">Let’s talk.</a></p>
+      <p>&copy; 2026 Khethelo Mafuleka</p>
+    </div>
+  </footer>
+  <script src="../scripts/ui.js" defer></script>
 </body>
 </html>

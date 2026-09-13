@@ -5,28 +5,60 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Dev Workflow Tools — Case Study</title>
   <link rel="stylesheet" href="../style.css">
- </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+</head>
 <body>
   <header>
     <div class="header-inner">
-      <div class="brand"><h1>LungeloMK</h1><p class="tagline">Case study</p></div>
-      <nav><a href="../index.html">Home</a><a href="../projects.html">Projects</a><a href="../profile.html">Profile</a></nav>
+      <div class="brand"><h1><a href="../index.html">KM</a></h1></div>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="../projects.html" aria-current="page">Work</a>
+        <a href="../profile.html">About</a>
+        <a href="../resume.html">Resume</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
     </div>
   </header>
   <main>
-    <section class="card">
-      <h2>Dev Workflow Tools — Case Study</h2>
-      <p>Project: Dev Workflow Tools — <a href="https://devworkflowtools.com/">Live site</a></p>
-      <h3>Summary</h3>
-      <p>A tools site aimed at improving developer productivity with small utilities and workflow enhancements.</p>
-      <h3>Role</h3>
-      <ul>
-        <li>Full-stack developer: front-end and back-end utilities.</li>
-      </ul>
-      <h3>Screenshots</h3>
-      <img src="../assets/proj-devworkflow.png" alt="Dev Workflow screenshot" style="max-width:100%;border-radius:8px;border:1px solid #e6eefb">
+    <section class="page-hero" data-reveal>
+      <div class="hero-top">
+        <span class="idx">Note</span>
+        <span>Developer tools</span>
+      </div>
+      <h2 class="display">Dev <span>workflow.</span></h2>
+      <p class="lede">A tools site aimed at small utilities and workflow enhancements for developers.</p>
+      <div class="hero-actions">
+        <a class="button" href="https://devworkflowtools.com/" target="_blank" rel="noopener">Open live site</a>
+        <a class="button button-ghost" href="../projects.html">All work</a>
+      </div>
     </section>
+    <a class="cs-visual theme-union" href="https://devworkflowtools.com/" target="_blank" rel="noopener">
+      <em>Live · devworkflowtools.com</em>
+      <strong>Dev Workflow Tools</strong>
+    </a>
+    <div class="cs-grid">
+      <div data-reveal>
+        <h3>Summary</h3>
+        <p>Focused on productivity: small tools, clear layout, fast to scan.</p>
+      </div>
+      <div data-reveal>
+        <h3>Role</h3>
+        <ul>
+          <li>Full-stack: front-end and back-end utilities</li>
+        </ul>
+      </div>
+    </div>
+    <img class="cs-shot" src="../assets/proj-devworkflow.png" alt="Dev Workflow Tools screenshot">
   </main>
-  <footer><p>&copy; 2025 LungeloMK</p></footer>
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <p class="footer-giant"><a href="../contact.html">Let’s talk.</a></p>
+      <p>&copy; 2026 Khethelo Mafuleka</p>
+    </div>
+  </footer>
+  <script src="../scripts/ui.js" defer></script>
 </body>
 </html>

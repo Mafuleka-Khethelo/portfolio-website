@@ -3,119 +3,149 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Profile — LungeloMK</title>
+  <title>About — Khethelo Mafuleka</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <div class="header-inner">
-      <div class="brand">
-        <h1>LungeloMK</h1>
-        <p class="tagline">Software developer • Frontend &amp; Tools</p>
-      </div>
+      <div class="brand"><h1><a href="index.html">KM</a></h1></div>
       <nav>
         <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
+        <a href="projects.html">Work</a>
+        <a href="profile.html" aria-current="page">About</a>
         <a href="resume.html">Resume</a>
         <a href="contact.html">Contact</a>
-        <a href="https://github.com/LungeloMK" class="external" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/Mafuleka-Khethelo" class="external" target="_blank" rel="noopener">GitHub</a>
       </nav>
     </div>
   </header>
   <main>
-    <section class="profile-section">
-      <div class="profile-card">
-        <div class="avatar"><img src="assets/myPrifile.jpg" alt="Lungelo MK" class="avatar-img"></div>
-        <div class="profile-info">
-          <h2>Lungelo MK</h2>
-          <p class="role">Full‑stack developer focused on clean frontend, tooling, and developer experience.</p>
-          <p>I believe in shipping well-tested, accessible interfaces and tools that help teams move faster.</p>
-          <h4>Skills</h4>
-          <div class="skills-block">
-            <h5>Frontend</h5>
-            <ul class="skill-list">
-              <li>HTML5, CSS3, JavaScript</li>
-              <li>Responsive design with modern UI/UX</li>
-              <li>Professional animations and transitions</li>
-            </ul>
+    <section class="page-hero" data-reveal>
+      <div class="hero-top">
+        <span class="avail"><i></i> Available for roles &amp; builds</span>
+        <span class="idx">About</span>
+      </div>
+      <h2 class="display">The <span>builder.</span></h2>
+      <p class="lede">AI engineer and software engineer. I ship Java systems, Android apps, and live websites South African businesses actually use.</p>
+    </section>
 
-            <h5>Backend</h5>
-            <ul class="skill-list">
-              <li>Node.js with Express.js</li>
-              <li>Hosted backend services (optional)</li>
-              <li>JWT authentication</li>
-              <li>Nodemailer for emails</li>
-              <li>Security middleware (Helmet, CORS, Rate Limiting)</li>
-            </ul>
-          </div>
-          <h4>Inferred skills from GitHub</h4>
-          <div id="inferred-skills">Set your GitHub username below to see inferred skills.</div>
+    <div class="about-grid">
+      <div class="about-photo" data-reveal>
+        <img src="assets/myPrifile.jpg" alt="Khethelo Mafuleka">
+      </div>
+      <div data-reveal>
+        <p class="lede" style="margin-bottom:1.2rem">Final-year Diploma in Computer Science at Tshwane University of Technology. AI WIL at CXI-Africa. GitHub is <a href="https://github.com/Mafuleka-Khethelo">Mafuleka-Khethelo</a> (previously LungeloMK).</p>
+        <p class="muted">I care about work that ships — a WhatsApp booking on a restaurant site, a matching system students can run, an Android screen that feels finished.</p>
+        <p class="about-meta">
+          <span><strong>Based</strong> Polokwane / Johannesburg</span>
+          <span><strong>Diploma</strong> May 2027</span>
+        </p>
+        <div class="hero-actions" style="margin-top:1.4rem">
+          <a class="button" href="projects.html">See live work</a>
+          <a class="button button-ghost" href="resume.html">Resume</a>
         </div>
+      </div>
+    </div>
+
+    <div class="band">
+      <div class="band-inner" data-reveal>
+        <p class="quote">Ship the business, not the brochure. Phone-first, booked, and messaged.<cite>AfriWebBuild · 2026</cite></p>
+      </div>
+    </div>
+
+    <div class="highlights">
+      <div class="highlight" data-reveal><strong>Huawei ICT</strong><span>Competition — Top 20</span></div>
+      <div class="highlight" data-reveal><strong>Falling Walls</strong><span>Lab South Africa — Top 20</span></div>
+      <div class="highlight" data-reveal><strong>CXI-Africa</strong><span>AI WIL — Python, ML, MLOps</span></div>
+      <div class="highlight" data-reveal><strong>TUT</strong><span>Java EE, Android, databases</span></div>
+    </div>
+
+    <div class="skill-grid">
+      <div class="skill-cell" data-reveal>
+        <h5>Software</h5>
+        <ul class="skill-list">
+          <li>Java, Java EE, OOP, multithreading</li>
+          <li>Kotlin and Jetpack Compose</li>
+          <li>SQL, Oracle PL/SQL, Derby, JDBC</li>
+        </ul>
+      </div>
+      <div class="skill-cell" data-reveal>
+        <h5>AI &amp; data</h5>
+        <ul class="skill-list">
+          <li>Python, data analysis, machine learning</li>
+          <li>Deep learning and MLOps (CXI-Africa)</li>
+          <li>Matching and scoring systems</li>
+        </ul>
+      </div>
+      <div class="skill-cell" data-reveal>
+        <h5>Web &amp; product</h5>
+        <ul class="skill-list">
+          <li>HTML, CSS, JavaScript, React, Next.js</li>
+          <li>WhatsApp-first client sites</li>
+          <li>Production hosting and conversion UX</li>
+        </ul>
+      </div>
+    </div>
+    <p class="idx">From GitHub</p>
+    <div id="inferred-skills">Loading public repositories…</div>
+
+    <section>
+      <div class="section-head" data-reveal>
+        <span class="idx">Path</span>
+        <h3>Experience.</h3>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item" data-reveal>
+          <div class="when">2026 — Now</div>
+          <div>
+            <h4>Founder — AfriWebBuild</h4>
+            <p>Shipped live client sites: GAE Polokwane, Union Electrical, AERIA, Velvet Spoon, Clean Slate, Tears of the Oppressed.</p>
+          </div>
+        </article>
+        <article class="timeline-item" data-reveal>
+          <div class="when">2026 — Now</div>
+          <div>
+            <h4>AI WIL Candidate — CXI-Africa</h4>
+            <p>Python, data analysis, machine learning, deep learning, and MLOps on industry-aligned projects.</p>
+          </div>
+        </article>
+        <article class="timeline-item" data-reveal>
+          <div class="when">TUT</div>
+          <div>
+            <h4>Software Engineer — Tshwane University of Technology</h4>
+            <p>Java EE, Android with Jetpack Compose, JDBC/Derby, and multithreaded systems. Diploma expected May 2027.</p>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section class="experience">
-      <h3>Experience</h3>
-      <div class="card">
-        <h4>Frontend Engineer — Acme Co.</h4>
-        <p class="muted">2025 — Present</p>
-        <p>Working on UI components, design systems and developer tooling.</p>
+    <section style="margin-top:2.8rem">
+      <div class="section-head" data-reveal>
+        <span class="idx">Live</span>
+        <h3>Selected sites.</h3>
       </div>
-      <div class="card">
-        <h4>Full‑stack Developer — Open Source</h4>
-        <p class="muted">2023 — 2024</p>
-        <p>Maintained libraries and small utilities used by developer communities.</p>
-      </div>
-      <div class="card">
-        <h4>Inferred skills</h4>
-  <p class="muted">Primary: Java, OOP, Java Swing. Frontend: HTML/CSS/JS. Additional: Embedded assembly, Android (Kotlin). Backend: Node.js/Express (hosted services).</p>
-        <div id="inferred-skills" style="margin-top:0.5rem">
-          <span class="skill-badge">Java</span>
-          <span class="skill-badge">OOP</span>
-          <span class="skill-badge">Java Swing</span>
-          <span class="skill-badge">HTML/CSS/JS</span>
-          <span class="skill-badge">Embedded (PIC)</span>
-        </div>
-      </div>
-
-      <div class="card">
-        <h4>Top public projects</h4>
-        <ul>
-          <li><a href="https://github.com/LungeloMK/ThreadSequenceController">ThreadSequenceController</a> — Java concurrency demo</li>
-          <li><a href="https://github.com/LungeloMK/room-temperature-analyzer">room-temperature-analyzer</a> — Data processing in Java</li>
-          <li><a href="https://github.com/LungeloMK/java-dao-pattern">java-dao-pattern</a> — DAO pattern &amp; DB access</li>
-          <li><a href="https://github.com/LungeloMK/java-swing-music-player">java-swing-music-player</a> — Desktop UI example</li>
-          <li><a href="https://github.com/LungeloMK/clean-slate-login">clean-slate-login</a> — Frontend login UI</li>
-        </ul>
-      </div>
-      <div class="review">
-        <h4>Reviewer notes</h4>
-        <p>Strengths: strong Java foundation (OOP, concurrency), wide practical exposure (desktop apps, web UIs, embedded projects). Hosted sites demonstrate full-stack experience with Node.js/Express and production deployment.</p>
-        <p>Suggestions: add short README summaries with screenshots for key repos, include CI/test badges on main projects, and add a short technical case study (one page) describing architecture for a hosted site (DB schema, auth flow, and security measures).</p>
-      </div>
-      <div class="card">
-        <h4>Skill assessment (based on public repositories)</h4>
-        <p><strong>Java (Advanced):</strong> Your repo corpus shows consistent Java work across exercises, desktop apps, and concurrency demos. This demonstrates strong OOP principles, familiarity with Java libraries (Swing, IO), and understanding of synchronization patterns. Use one repo as a deeper case study (design decisions, trade-offs, and lessons learned).</p>
-        <p><strong>Frontend — HTML/CSS/JavaScript (Intermediate/Advanced):</strong> Your hosted sites and frontend snippets show practical knowledge of responsive layout and UI polish. To strengthen this further, add component-level documentation and a short performance/accessibility audit to key repos.</p>
-  <p><strong>Backend — Node.js / Express (Intermediate):</strong> The live projects indicate you can build and deploy full-stack apps with authentication and email flows. Consider adding API docs and tests for critical endpoints to increase confidence for reviewers.</p>
-        <p><strong>Embedded / Low-level (Intermediate):</strong> Assembly and microcontroller projects show you can work close to hardware and think in constrained environments — a strong differentiator for systems roles.</p>
-       
-
-        <h5 style="margin-top:0.8rem">Skill badges</h5>
-        <div class="skill-badges">
-          <div class="skill-item"><div class="skill-label">Java</div><div class="skill-meter"><div class="skill-meter-fill" style="width:88%"></div></div></div>
-          <div class="skill-item"><div class="skill-label">Frontend (HTML/CSS/JS)</div><div class="skill-meter"><div class="skill-meter-fill" style="width:75%"></div></div></div>
-          <div class="skill-item"><div class="skill-label">Node.js / Backend</div><div class="skill-meter"><div class="skill-meter-fill" style="width:65%"></div></div></div>
-          <div class="skill-item"><div class="skill-label">Embedded / Assembly</div><div class="skill-meter"><div class="skill-meter-fill" style="width:60%"></div></div></div>
-        </div>
+      <div class="mini-work">
+        <a class="theme-gae" href="https://gae-polokwane.afriwebbuild.com/" target="_blank" rel="noopener"><em>01</em><strong>GAE Polokwane</strong></a>
+        <a class="theme-clean" href="https://cleanslatesolutions.co.za/" target="_blank" rel="noopener"><em>02</em><strong>Clean Slate</strong></a>
+        <a class="theme-tears" href="https://tearsoftheoppressed.co.za/" target="_blank" rel="noopener"><em>03</em><strong>Tears of the Oppressed</strong></a>
+        <a class="theme-fashion" href="https://fashion-ecommerce.afriwebbuild.com/" target="_blank" rel="noopener"><em>04</em><strong>AERIA</strong></a>
+        <a class="theme-velvet" href="https://velvetspoon.afriwebbuild.com/" target="_blank" rel="noopener"><em>05</em><strong>Velvet Spoon</strong></a>
+        <a class="theme-union" href="https://union-electrical.afriwebbuild.com/" target="_blank" rel="noopener"><em>06</em><strong>Union Electrical</strong></a>
       </div>
     </section>
   </main>
-  <footer>
-    <p>&copy; 2025 LungeloMK</p>
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <p class="footer-giant"><a href="contact.html">Let’s talk.</a></p>
+      <p>&copy; 2026 Khethelo Mafuleka</p>
+    </div>
   </footer>
-  <script>window.GITHUB_USERNAME = 'LungeloMK';</script>
+  <script>window.GITHUB_USERNAME = 'Mafuleka-Khethelo';</script>
   <script src="scripts/github.js" defer></script>
-    <script src="scripts/lightbox.js" defer></script>
+  <script src="scripts/ui.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-label="AfriWebBuild website preview">
+  <rect width="1200" height="720" fill="#F6F1E8"/>
+  <rect x="0" y="0" width="1200" height="72" fill="#FBF7F0"/>
+  <rect x="0" y="71" width="1200" height="1" fill="#E8DFD2"/>
+  <circle cx="56" cy="36" r="10" fill="#0F766E"/>
+  <text x="76" y="42" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#111111">AfriWebBuild</text>
+  <rect x="1008" y="22" width="148" height="28" rx="14" fill="#14532D"/>
+  <text x="1082" y="41" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#F6F1E8">Free demo</text>
+  <text x="72" y="140" font-family="Inter, Arial, sans-serif" font-size="13" letter-spacing="3" fill="#B45309">JOHANNESBURG · 48-HOUR DEMO · R3,000 TO GO LIVE</text>
+  <text x="72" y="214" font-family="Georgia, 'Times New Roman', serif" font-size="48" fill="#111111">A website that sends customers</text>
+  <text x="72" y="272" font-family="Georgia, 'Times New Roman', serif" font-size="48" fill="#111111">to your WhatsApp.</text>
+  <text x="72" y="330" font-family="Inter, Arial, sans-serif" font-size="20" fill="#3F3F46">Phone-first pages for South African businesses.</text>
+  <rect x="72" y="368" width="280" height="52" rx="26" fill="#14532D"/>
+  <text x="212" y="400" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#F6F1E8">Get a free demo</text>
+  <rect x="368" y="368" width="210" height="52" rx="26" fill="none" stroke="#D6CBBA" stroke-width="2"/>
+  <text x="473" y="400" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#14532D">Chat on WhatsApp</text>
+  <ellipse cx="900" cy="510" rx="210" ry="150" fill="#D7E4D4"/>
+  <ellipse cx="980" cy="470" rx="150" ry="120" fill="#1F7A63"/>
+  <circle cx="1048" cy="392" r="38" fill="#14B8A6"/>
+  <path d="M1036 392c0-7 6-13 13-13s13 6 13 13c0 8-7 16-13 22-6-6-13-14-13-22z" fill="#F6F1E8"/>
+  <rect x="72" y="640" width="180" height="44" rx="22" fill="#14B8A6"/>
+  <text x="162" y="668" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#F6F1E8">WhatsApp</text>
+  <rect x="268" y="640" width="160" height="44" rx="22" fill="#14532D"/>
+  <text x="348" y="668" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#F6F1E8">Free demo</text>
+</svg>

@@ -5,24 +5,57 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>ThreadSequenceController — Case Study</title>
   <link rel="stylesheet" href="../style.css">
- </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+</head>
 <body>
   <header>
     <div class="header-inner">
-      <div class="brand"><h1>LungeloMK</h1><p class="tagline">Case study</p></div>
-      <nav><a href="../index.html">Home</a><a href="../projects.html">Projects</a><a href="../profile.html">Profile</a></nav>
+      <div class="brand"><h1><a href="../index.html">KM</a></h1></div>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="../projects.html" aria-current="page">Work</a>
+        <a href="../profile.html">About</a>
+        <a href="../resume.html">Resume</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
     </div>
   </header>
   <main>
-    <section class="card">
-      <h2>ThreadSequenceController — Case Study</h2>
-      <p>Repository demonstrating thread coordination and sequencing in Java.</p>
-      <h3>Summary</h3>
-      <p>A Java utility exploring concurrency patterns and safe hand-off between worker threads.</p>
-      <h3>Links</h3>
-      <p><a href="https://github.com/LungeloMK/ThreadSequenceController" target="_blank" rel="noopener">Repository on GitHub</a></p>
+    <section class="page-hero" data-reveal>
+      <div class="hero-top">
+        <span class="idx">Java</span>
+        <span>Concurrency</span>
+      </div>
+      <h2 class="display">Thread <span>sequence.</span></h2>
+      <p class="lede">A Java utility exploring concurrency patterns and safe hand-off between worker threads.</p>
+      <div class="hero-actions">
+        <a class="button" href="https://github.com/Mafuleka-Khethelo/ThreadSequenceController" target="_blank" rel="noopener">View repository</a>
+        <a class="button button-ghost" href="../projects.html">All work</a>
+      </div>
     </section>
+    <div class="cs-visual theme-fashion">
+      <em>GitHub · Java</em>
+      <strong>ThreadSequenceController</strong>
+    </div>
+    <div class="cs-grid">
+      <div data-reveal>
+        <h3>Summary</h3>
+        <p>Demonstrates thread coordination and sequencing — how workers take turns without racing.</p>
+      </div>
+      <div data-reveal>
+        <h3>Stack</h3>
+        <p>Java. Public repo on Mafuleka-Khethelo.</p>
+      </div>
+    </div>
   </main>
-  <footer><p>&copy; 2025 LungeloMK</p></footer>
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <p class="footer-giant"><a href="../contact.html">Let’s talk.</a></p>
+      <p>&copy; 2026 Khethelo Mafuleka</p>
+    </div>
+  </footer>
+  <script src="../scripts/ui.js" defer></script>
 </body>
 </html>

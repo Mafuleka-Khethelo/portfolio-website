@@ -3,55 +3,73 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Contact — LungeloMK</title>
+  <title>Contact — Khethelo Mafuleka</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <div class="header-inner">
-      <div class="brand">
-        <h1>LungeloMK</h1>
-        <p class="tagline">Software developer • Frontend &amp; Tools</p>
-      </div>
+      <div class="brand"><h1><a href="index.html">KM</a></h1></div>
       <nav>
         <a href="index.html">Home</a>
-        <a href="profile.html">Profile</a>
+        <a href="projects.html">Work</a>
+        <a href="profile.html">About</a>
         <a href="resume.html">Resume</a>
-        <a href="projects.html">Projects</a>
-        <a href="https://github.com/LungeloMK" class="external" target="_blank" rel="noopener">GitHub</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+        <a href="https://github.com/Mafuleka-Khethelo" class="external" target="_blank" rel="noopener">GitHub</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="contact-section">
-      <h2>Contact</h2>
-      <div class="contact-card">
-        <form id="contact-form" class="contact-form" action="#" method="post" novalidate>
-          <label for="name">Name</label>
-          <input id="name" name="name" type="text" required />
-
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" required />
-
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="6" required></textarea>
-
-          <button type="submit" class="button">Send message</button>
-          <p id="form-status" class="form-status" aria-live="polite"></p>
-        </form>
+    <section class="page-hero" data-reveal>
+      <div class="hero-top">
+        <span class="avail"><i></i> Replies on WhatsApp</span>
+        <span class="idx">Contact</span>
       </div>
+      <h2 class="display">Let’s <span>talk.</span></h2>
+      <p class="lede">Engineering roles, collaborations, or a website for a South African business. I can put a demo live in 48 hours.</p>
     </section>
+
+    <div class="contact-stage" data-reveal>
+      <form id="contact-form" class="contact-form" action="https://way2form.com/api/forms/53850bd2-396d-41ba-bebd-c320ea2ce17f/submit" method="post" novalidate>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required />
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+        <button type="submit" class="button">Send message</button>
+        <p id="form-status" class="form-status" aria-live="polite"></p>
+      </form>
+
+      <div class="contact-panel">
+        <span class="idx">Direct</span>
+        <h3>Other doors.</h3>
+        <div class="channels">
+          <a class="channel" href="https://wa.me/27720129776">WhatsApp <small>+27 72 012 9776</small></a>
+          <a class="channel" href="mailto:mkgithubcom@gmail.com">Email <small>mkgithubcom@gmail.com</small></a>
+          <a class="channel" href="https://github.com/Mafuleka-Khethelo" target="_blank" rel="noopener">GitHub <small>Mafuleka-Khethelo</small></a>
+          <a class="channel" href="projects.html">Live work <small>Six client sites</small></a>
+        </div>
+      </div>
+    </div>
   </main>
 
-  <footer>
-    <p>&copy; 2025 LungeloMK</p>
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <p class="footer-giant"><a href="mailto:mkgithubcom@gmail.com">Write me.</a></p>
+      <p>&copy; 2026 Khethelo Mafuleka</p>
+    </div>
   </footer>
 
   <script>
-  window.FORMSPREE_ENDPOINT = 'https://formspree.io/f/xblzpeqo';
-    window.BACKEND_API = null;
+    window.WAY2FORM_ENDPOINT = 'https://way2form.com/api/forms/53850bd2-396d-41ba-bebd-c320ea2ce17f/submit';
   </script>
   <script src="scripts/contact.js" defer></script>
+  <script src="scripts/ui.js" defer></script>
 </body>
 </html>
