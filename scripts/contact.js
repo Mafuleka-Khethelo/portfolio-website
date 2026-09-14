@@ -24,11 +24,8 @@
   function send(data){
     return fetch(ENDPOINT, {
       method: 'POST',
-      body: data.toString(),
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/x-www-form-urlencoded'
-      }
+      body: data,
+      headers: { 'Accept': 'application/json' }
     }).then(async r=>{
       const text = await r.text();
       let json = null;
