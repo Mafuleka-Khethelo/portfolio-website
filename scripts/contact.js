@@ -3,7 +3,7 @@
     'https://way2form.com/api/forms/53850bd2-396d-41ba-bebd-c320ea2ce17f/submit';
 
   function createStatus(node){
-    let s = node.querySelector('.contact-status') || node.querySelector('#form-status');
+    let s = node.querySelector('#form-status') || node.querySelector('.contact-status');
     if(!s){ s = document.createElement('p'); s.className='form-status contact-status'; s.setAttribute('aria-live','polite'); node.appendChild(s) }
     return s;
   }
@@ -13,19 +13,31 @@
     statusNode.style.color = ok ? '' : '#b91c1c';
   }
 
-  function send(data, retries=2){
+  function fieldsFrom(form){
+    const data = new URLSearchParams();
+    data.set('name', (form.elements.name && form.elements.name.value || '').trim());
+    data.set('email', (form.elements.email && form.elements.email.value || '').trim());
+    data.set('message', (form.elements.message && form.elements.message.value || '').trim());
+    return data;
+  }
+
+  function send(data){
     return fetch(ENDPOINT, {
       method: 'POST',
-      body: data,
-      headers: { 'Accept': 'application/json' }
-    }).then(r=>{
-      if(!r.ok) throw new Error('submit failed');
-      const type = r.headers.get('content-type') || '';
-      if(type.includes('application/json')) return r.json();
-      return {};
-    }).catch(err=>{
-      if(retries>0) return new Promise(res=>setTimeout(()=>res(send(data,retries-1)), 800));
-      throw err;
+      body: data.toString(),
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/x-www-form-urlencoded'
+      }
+    }).then(async r=>{
+      const text = await r.text();
+      let json = null;
+      try { json = text ? JSON.parse(text) : null; } catch { json = null; }
+      if(!r.ok){
+        const msg = (json && (json.error || json.message)) || 'submit failed';
+        throw new Error(msg);
+      }
+      return json || {};
     });
   }
 
@@ -54,14 +66,11 @@
         return;
       }
 
-      const data = new FormData(form);
-      data.delete(hpName);
-      data.append('source', window.location.href);
-
-      send(data).then(()=>{
+      send(fieldsFrom(form)).then(()=>{
         showMessage(status,'Message sent — thank you!');
         form.reset();
-      }).catch(()=>{
+      }).catch(err=>{
+        console.error('Way2Form submit failed', err);
         showMessage(status,'Error sending message. Please try again later.', false);
       });
     });
