@@ -27,14 +27,15 @@ document.addEventListener('DOMContentLoaded', function(){
       });
     }
     overlay.classList.add('open');
-    
+    document.body.classList.add('lightbox-open');
     overlay.tabIndex = -1;
     overlay.focus();
   }
 
   function close(){
     overlay.classList.remove('open');
-  if(window.__lastActiveElement) try{ window.__lastActiveElement.focus(); }catch(e){}
+    document.body.classList.remove('lightbox-open');
+    if(window.__lastActiveElement) try{ window.__lastActiveElement.focus(); }catch(e){}
   }
 
   overlay.addEventListener('click', function(e){
@@ -62,5 +63,5 @@ document.addEventListener('DOMContentLoaded', function(){
     });
   });
 
-  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') overlay.classList.remove('open'); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') close(); });
 });
