@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function(){
     if(e.target === overlay) close();
   });
 
-  document.querySelectorAll('.project-thumb').forEach(img=>{
+  document.querySelectorAll('.project-thumb, .zoom-img').forEach(img=>{
     img.style.cursor = 'zoom-in';
     img.addEventListener('click', function(e){
       

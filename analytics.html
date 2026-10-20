@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Analytics — Khethelo Mafuleka</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="brand"><h1><a href="index.html">KM</a></h1></div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Work</a>
+        <a href="analytics.html" aria-current="page">Analytics</a>
+        <a href="profile.html">About</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://github.com/Mafuleka-Khethelo" class="external" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero" data-reveal>
+      <div class="hero-top">
+        <span class="idx">Data · ML · BI</span>
+        <span>Kaggle · Tableau · Excel · Python</span>
+      </div>
+      <h2 class="display">Charts that <span>decide.</span></h2>
+      <p class="lede">Python models, Tableau workbooks, and Excel root-cause work — with the actual diagrams from the notebooks, not stock art.</p>
+    </section>
+
+    <div class="highlights">
+      <div class="highlight" data-reveal><strong>1.45M</strong><span>NYC taxi trips modelled</span></div>
+      <div class="highlight" data-reveal><strong>ChargePoint</strong><span>EV sessions, 2011–2020</span></div>
+      <div class="highlight" data-reveal><strong>5</strong><span>Kaggle certificates</span></div>
+      <div class="highlight" data-reveal><strong>5</strong><span>Tableau workbooks</span></div>
+    </div>
+
+    <div class="pipeline" aria-label="Analytics workflow" data-reveal>
+      <div class="pipe-step"><em>01</em><strong>Ingest</strong><span>CSV, Excel, ChargePoint, BTS flights</span></div>
+      <div class="pipe-step"><em>02</em><strong>Clean</strong><span>Outliers, missing ports, odd latitudes</span></div>
+      <div class="pipe-step"><em>03</em><strong>Visualise</strong><span>Seaborn, Tableau, PDCA boards</span></div>
+      <div class="pipe-step"><em>04</em><strong>Model</strong><span>KNN, linear, logistic, random forest</span></div>
+      <div class="pipe-step"><em>05</em><strong>Decide</strong><span>Dwell time, delays, a 22% revenue drop</span></div>
+    </div>
+
+    <section id="certs">
+      <div class="section-head" data-reveal>
+        <span class="idx">Kaggle Learn</span>
+        <h3>Certificates.</h3>
+        <p>Completed June–2026 onward. Click any certificate to open it full size.</p>
+      </div>
+      <div class="cert-grid">
+        <article class="cert-card" data-reveal>
+          <img class="zoom-img" src="assets/certs/kaggle-intro-programming.jpeg" alt="Kaggle certificate: Intro to Programming, 12 June 2026" data-caption="Kaggle — Intro to Programming · 12 June 2026">
+          <div><em>12 Jun 2026</em><strong>Intro to Programming</strong></div>
+        </article>
+        <article class="cert-card" data-reveal>
+          <img class="zoom-img" src="assets/certs/kaggle-python.jpeg" alt="Kaggle certificate: Python, 25 June 2026" data-caption="Kaggle — Python · 25 June 2026">
+          <div><em>25 Jun 2026</em><strong>Python</strong></div>
+        </article>
+        <article class="cert-card" data-reveal>
+          <img class="zoom-img" src="assets/certs/kaggle-intro-ml.jpeg" alt="Kaggle certificate: Intro to Machine Learning, 23 July 2026" data-caption="Kaggle — Intro to Machine Learning · 23 July 2026">
+          <div><em>23 Jul 2026</em><strong>Intro to Machine Learning</strong></div>
+        </article>
+        <article class="cert-card" data-reveal>
+          <img class="zoom-img" src="assets/certs/kaggle-ml-explainability.jpeg" alt="Kaggle certificate: Machine Learning Explainability" data-caption="Kaggle — Machine Learning Explainability">
+          <div><em>Kaggle Learn</em><strong>ML Explainability</strong></div>
+        </article>
+        <article class="cert-card" data-reveal>
+          <img class="zoom-img" src="assets/certs/kaggle-intermediate-ml.jpeg" alt="Kaggle certificate: Intermediate Machine Learning" data-caption="Kaggle — Intermediate Machine Learning">
+          <div><em>Kaggle Learn</em><strong>Intermediate ML</strong></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="ev" class="study">
+      <div class="section-head" data-reveal>
+        <span class="idx">01 — Python · scikit-learn</span>
+        <h3>EV charger occupancy.</h3>
+        <p>ChargePoint CY20Q4 sessions. Question: which stations and hours leave a car plugged in without charging for more than 30 minutes — and can a model flag it for a web app?</p>
+      </div>
+      <div class="study-meta" data-reveal>
+        <span>Pandas · NumPy</span>
+        <span>Seaborn</span>
+        <span>Logistic regression</span>
+        <span>Random forest</span>
+        <span>TimeSeriesSplit</span>
+        <span>joblib pipeline</span>
+      </div>
+      <div class="viz-grid">
+        <figure class="viz-card viz-wide" data-reveal>
+          <img class="zoom-img" src="assets/analytics/ev-08.png" alt="Bar chart of top 10 Palo Alto ChargePoint stations by session count" data-caption="Top stations by session count — Hamilton #2 leads with 23,721 sessions">
+          <figcaption>Hamilton #2 in Palo Alto is the busiest port in the extract — 23,721 sessions.</figcaption>
+        </figure>
+        <figure class="viz-card" data-reveal>
+          <img class="zoom-img" src="assets/analytics/ev-21.png" alt="Heatmap of long non-charging sessions by arrival hour and weekday versus weekend" data-caption="Long dwell after 21:00 — over 50% of late-night sessions sit uncharging">
+          <figcaption>After 21:00, more than half of sessions sit uncharging for 30+ minutes.</figcaption>
+        </figure>
+        <figure class="viz-card" data-reveal>
+          <img class="zoom-img" src="assets/analytics/ev-19.png" alt="Percentage of valid sessions exceeding 30 noncharging minutes by station" data-caption="Webster #2 has the highest share of long idle sessions at 25.87%">
+          <figcaption>Webster #2 has the highest idle share among busy stations — 25.9%.</figcaption>
+        </figure>
+        <figure class="viz-card" data-reveal>
+          <img class="zoom-img" src="assets/analytics/ev-22.png" alt="Heatmap of long non-charging sessions by year and ChargePoint port type" data-caption="Level 2 ports carry the long-dwell problem; Level 1 sample sizes are tiny">
+          <figcaption>Level 2 ports carry the long-dwell problem. Level 1 counts are too small to trust.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="nyc" class="study">
+      <div class="section-head" data-reveal>
+        <span class="idx">02 — Python · 1.45 million rows</span>
+        <h3>NYC taxi duration.</h3>
+        <p>Kaggle-scale trip table. Structure first, then outliers and odd latitudes, then KNN / linear models and residual checks.</p>
+      </div>
+      <div class="study-meta" data-reveal>
+        <span>1,458,644 trips</span>
+        <span>11 columns</span>
+        <span>KNN regressor</span>
+        <span>Linear regression</span>
+        <span>Folium heatmap</span>
+      </div>
+      <div class="viz-grid">
+        <figure class="viz-card" data-reveal>
+          <img class="zoom-img" src="assets/analytics/nyc-17.png" alt="Line chart of median NYC taxi trip duration by pickup hour" data-caption="Median duration bottoms at 06:00, peaks around 14:00">
+          <figcaption>Median duration bottoms at 06:00, then climbs through the afternoon peak.</figcaption>
+        </figure>
+        <figure class="viz-card" data-reveal>
+          <img class="zoom-img" src="assets/analytics/nyc-16.png" alt="Line chart of median NYC taxi trip duration by day of week" data-caption="Thursday is the slowest weekday; Sunday is the fastest">
+          <figcaption>Thursday is the slowest weekday. Sunday is the fastest.</figcaption>
+        </figure>
+        <figure class="viz-card" data-reveal>
+          <img class="zoom-img" src="assets/analytics/nyc-21.png" alt="Correlation heatmap of NYC taxi features" data-caption="Pickup and dropoff longitude correlate at 0.78">
+          <figcaption>Pickup and dropoff longitude move together (0.78). Duration does not.</figcaption>
+        </figure>
+        <figure class="viz-card" data-reveal>
+          <img class="zoom-img" src="assets/analytics/nyc-27.png" alt="Residual plot from the NYC taxi duration regression" data-caption="Residuals hug zero with a few extreme outliers still in the fit">
+          <figcaption>Residuals hug zero — with a handful of extreme trips still in the fit.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="flight" class="study">
+      <div class="section-head" data-reveal>
+        <span class="idx">03 — Python · 2018–2024</span>
+        <h3>Flight delay structure.</h3>
+        <p>BTS-style flight table: delay densities, taxi-out vs arrival delay, KNN and linear models on elapsed time.</p>
+      </div>
+      <div class="viz-grid viz-stack">
+        <figure class="viz-card viz-wide" data-reveal>
+          <img class="zoom-img" src="assets/analytics/flight-08.png" alt="Density plots of departure, arrival, weather, NAS and security delay" data-caption="Most delay mass sits near zero; the tails are weather, NAS, and late aircraft">
+          <figcaption>Most flights are on time. The tails are weather, NAS, and late aircraft — not a bell curve.</figcaption>
+        </figure>
+        <figure class="viz-card viz-wide" data-reveal>
+          <img class="zoom-img" src="assets/analytics/flight-19.png" alt="Scatter plots of taxi-out, taxi-in and air time against arrival delay" data-caption="Taxi-out and taxi-in show the clearest positive slope into arrival delay">
+          <figcaption>Taxi-out and taxi-in show the clearest slope into arrival delay.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="tableau" class="study">
+      <div class="section-head" data-reveal>
+        <span class="idx">04 — Tableau</span>
+        <h3>Workbooks.</h3>
+        <p>Five <code>.twb</code> files: Superstore, coffee chain, Brazil tourism, console games, and a US hotel survey.</p>
+      </div>
+      <div class="book-grid">
+        <article class="book" data-reveal>
+          <span class="book-mark">Tableau</span>
+          <h4>SuperStore</h4>
+          <p>Orders, region, category, sales, discount, profit — shelf views across seven sheets.</p>
+        </article>
+        <article class="book" data-reveal>
+          <span class="book-mark">Tableau</span>
+          <h4>Coffee Chain</h4>
+          <p>Five Q1 worksheets on product, market, and profit questions.</p>
+        </article>
+        <article class="book" data-reveal>
+          <span class="book-mark">Tableau</span>
+          <h4>Brazil Tourism</h4>
+          <p>Six sheets on arrivals and destination mix.</p>
+        </article>
+        <article class="book" data-reveal>
+          <span class="book-mark">Tableau</span>
+          <h4>Console Games</h4>
+          <p>Four sheets on platform and title performance.</p>
+        </article>
+        <article class="book book-wide" data-reveal>
+          <span class="book-mark">Tableau</span>
+          <h4>Hotels Survey Analysis</h4>
+          <p>Named views, not “Sheet 1”: Likert scores by question, score by country, Northeastern US responses by gender, UK weekly responses by state and category.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="excel" class="study">
+      <div class="section-head" data-reveal>
+        <span class="idx">05 — Excel</span>
+        <h3>Why revenue fell 22%.</h3>
+        <p>Practical Application on <code>sales_data.xlsx</code>. Five whys, then PDCA — not a dump of pivot tables.</p>
+      </div>
+      <div class="excel-layout">
+        <ol class="whys" data-reveal>
+          <li><strong>Why 1</strong> Fewer customers are purchasing.</li>
+          <li><strong>Why 2</strong> Fewer customers in key groups are converting.</li>
+          <li><strong>Why 3</strong> Product mix and promotions stopped landing.</li>
+          <li><strong>Why 4</strong> Marketing ROI and segmentation drifted.</li>
+          <li><strong>Why 5</strong> No weekly loop to catch the drop early.</li>
+        </ol>
+        <div class="pdca" data-reveal>
+          <article><em>Plan</em><p>Which products, which customers, did ROI fall?</p></article>
+          <article><em>Do</em><p>Transactions, demographics, spend, product performance.</p></article>
+          <article><em>Check</em><p>Failed campaigns, underperforming SKUs, silent segments.</p></article>
+          <article><em>Act</em><p>Retarget, re-segment, watch revenue every week.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="study">
+      <div class="section-head" data-reveal>
+        <span class="idx">06 — Python basics</span>
+        <h3>Student performance.</h3>
+        <p>Training notebook: types, operators, branches, loops — then a pass-rate insight on a marks list. The habit under the larger models.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <p class="footer-giant"><a href="contact.html">Let’s talk.</a></p>
+      <p>&copy; 2026 Khethelo Mafuleka</p>
+    </div>
+  </footer>
+  <script src="scripts/lightbox.js" defer></script>
+  <script src="scripts/ui.js" defer></script>
+</body>
+</html>

@@ -52,3 +52,8 @@ Thumbs.db
 # Image optimization outputs
 /assets/*-1200.png
 /assets/*.webp
+
+# Local extract / Office locks
+tmp-extract/
+**/~$*.xlsx
+**/~$*.pptx
